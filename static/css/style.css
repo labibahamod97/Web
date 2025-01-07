@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playwrite GB S", cursive;
+    background: linear-gradient(-45deg, #a9efff, #72adff, #ffc1ff, #ff92a9);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite; /* Animation for the gradient */
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fc;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.logo {
+    max-width: 90%;
+    max-height: 90%;
+    padding: 30px;
+}
+
+.login-container {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Playwrite GB S", cursive;
+    font-size: 24px;
+    margin-bottom: -20px;
+    color: #333;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+form {
+    font-family:"Playwrite GB S", cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    font-family: "Playwrite GB S", cursive;
+    background-color: #000; /* Black background */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d60a0a; /* Red on hover */
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ba0c0c;
+}
